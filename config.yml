@@ -1,0 +1,45 @@
+http:
+  port: 8083
+  adminPort: 8183
+logging:
+  level: INFO
+#  loggers:
+# Uncomment the lines below to increase the amount of logging
+#    "se.omik.squash": TRACE
+database:
+  # the name of your JDBC driver
+  driverClass: com.mysql.jdbc.Driver
+
+  # the username
+  user: root
+
+  # the password
+  password: l053n0rd
+
+  # the JDBC URL
+  url: jdbc:mysql://fatty/geoip
+
+  # any properties specific to your JDBC driver:
+  properties:
+    charSet: UTF-8
+
+  # the maximum amount of time to wait on an empty pool before throwing an exception
+  maxWaitForConnection: 1s
+
+  # the SQL query to run when validating a connection's liveness
+  validationQuery: "/* MyService Health Check */ SELECT 1"
+
+  # the minimum number of connections to keep open
+  minSize: 8
+
+  # the maximum number of connections to keep open
+  maxSize: 32
+
+  # whether or not idle connections should be validated
+  checkConnectionWhileIdle: false
+
+  # how long a connection must be held before it can be validated
+  checkConnectionHealthWhenIdleFor: 10s
+
+  # the maximum lifetime of an idle connection
+  closeConnectionIfIdleFor: 1 minute
