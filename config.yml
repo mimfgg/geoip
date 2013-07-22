@@ -5,19 +5,19 @@ logging:
   level: INFO
 #  loggers:
 # Uncomment the lines below to increase the amount of logging
-#    "se.omik.squash": TRACE
+#    "se.omik.geoip": TRACE
 database:
   # the name of your JDBC driver
   driverClass: com.mysql.jdbc.Driver
 
   # the username
-  user: root
+  user: xxx
 
   # the password
-  password: l053n0rd
+  password: xxxx
 
   # the JDBC URL
-  url: jdbc:mysql://fatty/geoip
+  url: jdbc:mysql://server/geoip
 
   # any properties specific to your JDBC driver:
   properties:
